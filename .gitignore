@@ -1,0 +1,12 @@
+﻿.env
+*.env
+*.pem
+*.key
+*.p12
+*.pfx
+*.der
+*.crt
+*token*
+*secret*
+*credential*
+openclaw_email.env
