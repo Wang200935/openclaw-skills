@@ -15,14 +15,14 @@ Continuously scan **https://bhuntr.com/tw** every10 minutes, deeply fetch each e
 - **OpenClaw cron** (scheduled runs)
 
 ## Data locations
-- **Raw+filtered data:** `<OPENCLAW_HOME>/workspace_second/data/bhuntr/events.json`
-- **Daily summary output:** `<OPENCLAW_HOME>/workspace_second/data/bhuntr/daily_summary.md`
-- **Logs:** `<OPENCLAW_HOME>/workspace_second/data/bhuntr/logs/bhuntr_scrape.log`
+- **Raw+filtered data:** `C:\Users\wang\.openclaw\workspace_second\data\bhuntr\events.json`
+- **Daily summary output:** `C:\Users\wang\.openclaw\workspace_second\data\bhuntr\daily_summary.md`
+- **Logs:** `C:\Users\wang\.openclaw\workspace_second\data\bhuntr\logs\bhuntr_scrape.log`
 
 ## How to run manually
 ```powershell
-python <OPENCLAW_HOME>/skills/bhuntr-event-monitor/scripts/scrape_bhuntr.py
-python <OPENCLAW_HOME>/skills/bhuntr-event-monitor/scripts/summarize_bhuntr.py
+python C:\Users\wang\.openclaw\skills\bhuntr-event-monitor\scripts\scrape_bhuntr.py
+python C:\Users\wang\.openclaw\skills\bhuntr-event-monitor\scripts\summarize_bhuntr.py
 ```
 
 ## Scheduling (cron)

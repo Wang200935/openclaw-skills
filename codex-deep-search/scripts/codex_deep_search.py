@@ -16,9 +16,9 @@ except ImportError:
 TAVILY_URL = 'https://api.tavily.com/search'
 SERPER_URL = 'https://google.serper.dev/search'
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) OpenClaw/1.0'
-OPENCODE_CONFIG = os.environ.get('OPENCODE_CONFIG', '')
-OPENCODE_MODEL = os.environ.get('OPENCODE_MODEL', 'wangchatai/gpt-5.3-codex')
-OPENCODE_BIN = os.environ.get('OPENCODE_BIN', 'opencode')
+OPENCODE_CONFIG = r'C:\Users\wang\.config\opencode\opencode.json'
+OPENCODE_MODEL = 'wangchatai/gpt-5.3-codex'
+OPENCODE_BIN = r'C:\Users\wang\AppData\Roaming\npm\opencode.cmd'
 
 
 def get_user_env(name: str) -> str:

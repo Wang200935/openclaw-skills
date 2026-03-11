@@ -24,7 +24,7 @@ Use this skill for deeper research tasks where a normal quick web search is not 
 - `fetch_pages`: optional number of pages to fetch (default `5`)
 - `out`: optional output markdown file path
 
-If `out` is omitted, the recommended wrapper script now writes the temporary report and pushes it into a private repo for deep-search reports instead of cluttering the desktop.
+If `out` is omitted, the recommended wrapper `C:\Users\wang\.openclaw\scripts\deep-search.ps1` now writes the temporary report and pushes it into the private GitHub repo for deep-search reports instead of cluttering the desktop.
 
 ## Command
 
@@ -42,5 +42,5 @@ python .\scripts\codex_deep_search.py --query "What is Google Project Genie and 
 
 - Search priority follows user preference: **Tavily first, Serper second**.
 - OpenCode synthesis is driven by the configured model `wangchatai/gpt-5.3-codex`.
-- OpenCode config path can be set via `OPENCODE_CONFIG` env var.
+- OpenCode config path is forced to `C:\Users\wang\.config\opencode\opencode.json`.
 - If `out` is omitted, the script prints markdown to stdout.

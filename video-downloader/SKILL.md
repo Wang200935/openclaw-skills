@@ -13,7 +13,7 @@ Use this skill to download and archive videos, playlists, or live streams. Defau
 # Auto choose downloader by URL
 # Examples:
 # .\scripts\auto_download.ps1 -Url "<URL>"
-# .\scripts\auto_download.ps1 -Url "<URL>" -OutDir "<OPENCLAW_MEDIA_DIR>" -CookiesFromChrome
+# .\scripts\auto_download.ps1 -Url "<URL>" -OutDir "C:\\Users\\wang\\.openclaw\\media\\videos" -CookiesFromChrome
 ```
 
 ```powershell
@@ -21,7 +21,7 @@ Use this skill to download and archive videos, playlists, or live streams. Defau
 yt-dlp -f "bv*+ba/b" --merge-output-format mp4 -o "%(title)s.%(ext)s" "<URL>"
 
 # Save into a folder
-yt-dlp -P "<OPENCLAW_MEDIA_DIR>" -f "bv*+ba/b" --merge-output-format mp4 "<URL>"
+yt-dlp -P "C:\Users\wang\.openclaw\media\videos" -f "bv*+ba/b" --merge-output-format mp4 "<URL>"
 
 # Playlist
 yt-dlp --yes-playlist -o "%(playlist_title)s/%(playlist_index)03d-%(title)s.%(ext)s" "<URL>"

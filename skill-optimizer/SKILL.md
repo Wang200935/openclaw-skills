@@ -15,7 +15,7 @@ Scan **all skills**, classify them, detect overlaps, build a fast retrieval inde
 
 ## How to run manually
 ```powershell
-python <OPENCLAW_HOME>/skills/skill-optimizer/scripts/skill_optimizer.py --apply --deep-pass 2
+python C:\Users\wang\.openclaw\skills\skill-optimizer\scripts\skill_optimizer.py --apply --deep-pass 2
 ```
 
 ## What it outputs

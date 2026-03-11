@@ -1,6 +1,6 @@
 ---
 name: send-email
-description: Send email through Gmail SMTP with optional file attachments. Use when the user wants to send an email, draft-and-send mail, or send a local file as an email attachment. Shared skill for agents on this machine; reads SMTP_USER and SMTP_PASS from a local env file.
+description: Send email through Gmail SMTP with optional file attachments. Use when the user wants to send an email, draft-and-send mail, or send a local file as an email attachment. Shared skill for agents on this machine; reads SMTP_USER and SMTP_PASS from C:\Users\wang\.openclaw_email.env.
 ---
 
 # Send Email
@@ -37,7 +37,7 @@ python .\scripts\send_email.py --to_email "<recipient>" --subject "<subject>" --
 
 ## Notes
 
-- The script reads credentials only from a local env file (not checked in).
+- The script reads credentials only from `C:\Users\wang\.openclaw_email.env`.
 - The env file must contain `SMTP_USER=` and `SMTP_PASS=`.
 - Gmail SMTP host: `smtp.gmail.com`, port `587`, STARTTLS.
 - Attachment path must be an existing absolute path.

@@ -6,8 +6,7 @@ import requests
 BASE = "https://bhuntr.com"
 START_URL = "https://bhuntr.com/tw"
 
-BASE_DIR = os.environ.get("OPENCLAW_HOME", os.path.expanduser("~/.openclaw"))
-OUT_DIR = os.path.join(BASE_DIR, "workspace_second", "data", "bhuntr")
+OUT_DIR = r"C:\Users\wang\.openclaw\workspace_second\data\bhuntr"
 LOG_DIR = os.path.join(OUT_DIR, "logs")
 OUT_FILE = os.path.join(OUT_DIR, "events.json")
 LOG_FILE = os.path.join(LOG_DIR, "bhuntr_scrape.log")

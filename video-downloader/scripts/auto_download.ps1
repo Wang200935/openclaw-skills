@@ -1,13 +1,9 @@
 param(
  [Parameter(Mandatory=$true)][string]$Url,
- [string]$OutDir = $env:OPENCLAW_MEDIA_DIR,
+ [string]$OutDir = "C:\Users\wang\.openclaw\media\videos",
  [switch]$Best,
  [switch]$CookiesFromChrome
 )
-
-if (-not $OutDir) {
- $OutDir = Join-Path $env:USERPROFILE ".openclaw\media\videos"
-}
 
 # Auto-select downloader by URL
 $u = $Url.ToLower()

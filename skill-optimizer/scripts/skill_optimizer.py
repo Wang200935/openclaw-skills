@@ -2,8 +2,8 @@ import os, re, json, shutil, argparse
 from datetime import datetime
 from difflib import SequenceMatcher
 
-SKILLS_DIR = os.environ.get("OPENCLAW_SKILLS_DIR", os.path.expanduser("~/.openclaw/skills"))
-DATA_DIR = os.environ.get("OPENCLAW_DATA_DIR", os.path.expanduser("~/.openclaw/workspace_second/data/skill_optimizer"))
+SKILLS_DIR = r"C:\Users\wang\.openclaw\skills"
+DATA_DIR = r"C:\Users\wang\.openclaw\workspace_second\data\skill_optimizer"
 
 ARCHIVE_DIR = os.path.join(SKILLS_DIR, "_archive")
 

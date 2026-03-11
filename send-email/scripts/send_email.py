@@ -5,7 +5,7 @@ import smtplib
 from email.message import EmailMessage
 from pathlib import Path
 
-ENV_PATH = Path(os.environ.get("OPENCLAW_EMAIL_ENV", str(Path.home() / ".openclaw_email.env")))
+ENV_PATH = Path(r"C:\Users\wang\.openclaw_email.env")
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 587
 

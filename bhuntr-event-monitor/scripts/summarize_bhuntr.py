@@ -1,8 +1,7 @@
 import os, json, re
 from datetime import datetime
 
-BASE_DIR = os.environ.get("OPENCLAW_HOME", os.path.expanduser("~/.openclaw"))
-OUT_DIR = os.path.join(BASE_DIR, "workspace_second", "data", "bhuntr")
+OUT_DIR = r"C:\Users\wang\.openclaw\workspace_second\data\bhuntr"
 IN_FILE = os.path.join(OUT_DIR, "events.json")
 OUT_MD = os.path.join(OUT_DIR, "daily_summary.md")
 
