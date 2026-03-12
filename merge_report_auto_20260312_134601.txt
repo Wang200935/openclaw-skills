@@ -1,0 +1,9 @@
+Merge report auto 20260312_134601
+Backup dir: C:\Users\wang\.openclaw\skills\_merge_backups\\auto_20260312_134601
+Sources scanned: 4
+Skills scanned: 30
+Files copied: 0
+Text merged: 0
+Backed up: 1
+Code/binary preserved: 0
+Skipped identical: 791
