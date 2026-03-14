@@ -1,6 +1,6 @@
 ---
 name: news-text-classification-project
-description: End-to-end implementation for the Chinese news-title classification high-school paper. Use when you need the full pipeline in this workspace (collection → mapping/cleaning → baseline training → metrics/plots → judge-facing materials), including the exact scripts and reference documents used in this project.
+description: End-to-end implementation for the Chinese news-title classification high-school paper. Use when you need the full pipeline in this workspace (collection ??mapping/cleaning ??baseline training ??metrics/plots ??judge-facing materials), including the exact scripts and reference documents used in this project.
 ---
 
 # News Text Classification Project
@@ -11,7 +11,7 @@ Use this skill to run the full implementation used in this workspace (paper_proj
 
 1. Create or locate the project root (default: `paper_project/`).
 2. Copy scripts from this skill into the project so relative paths resolve correctly:
-   - Copy `skills/news-text-classification-project/scripts/*.py` → `paper_project/code/`
+   - Copy `skills/news-text-classification-project/scripts/*.py` ??`paper_project/code/`
 3. Follow the execution order in `references/run_order.md` and the build checklist in `references/README_build_order.md`.
 
 ## Core workflow (canonical order)
@@ -21,7 +21,7 @@ Use this skill to run the full implementation used in this workspace (paper_proj
 - Run per source and save outputs under `data/raw/`.
 - Use `code/collect_news_titles_alt.py` for alternative list-page patterns when needed.
 
-### 2) Mapping → research dataset
+### 2) Mapping ??research dataset
 - Update `references/label_mapping.csv` to match final categories.
 - Build mapped dataset:
   - `python code/build_research_dataset.py data/raw/*.csv --mapping schemas/label_mapping.csv --output data/interim/research_dataset_mapped.csv`
@@ -84,3 +84,50 @@ Use this skill to run the full implementation used in this workspace (paper_proj
 - `references/literature_method_bridge.md`
 - `references/diagram-plan.md`
 - `references/visualization-plan.md`
+
+
+---
+MERGED_FROM_BACKUP: C:\Users\wang\.openclaw\workspace\_tmp_openclaw_memory_backup\skills\news-text-classification-project\SKILL.md
+---
+---
+name: news-text-classification-project
+description: End-to-end workflow for a Taiwanese high-school information paper on Chinese news title classification. Use when collecting news-title data, designing category labels, building text-classification datasets, comparing CountVectorizer or TF-IDF features with classic classifiers, evaluating with confusion matrices and Macro F1, preparing visualizations, and turning the whole pipeline into material that can be shown to judges.
+---
+
+# News Text Classification Project
+
+Use this skill to execute the chosen paper topic from data collection through judge-facing outputs.
+
+## Core workflow
+
+1. Fix the target categories before collecting large amounts of data.
+2. Collect title, category, source, date, and URL by code.
+3. Clean and deduplicate the dataset before modeling.
+4. Build a baseline first, then compare stronger feature/model combinations.
+5. Prepare visual outputs and workflow diagrams alongside the experiments.
+6. Make every stage demonstrable to judges: data, code, pipeline, metrics, and error analysis.
+
+## Read by phase
+
+### Topic and design
+- `references/topic-definition.md`
+- `references/category-design.md`
+
+### Data collection
+- `references/data-source-options.md`
+- `references/data-schema.md`
+- `references/collection-sop.md`
+
+### Modeling
+- `references/model-baselines.md`
+- `references/evaluation-plan.md`
+- `references/error-analysis.md`
+
+### Judge-facing materials
+- `references/visualization-plan.md`
+- `references/diagram-plan.md`
+- `references/judge-facing-checklist.md`
+
+
+
+
